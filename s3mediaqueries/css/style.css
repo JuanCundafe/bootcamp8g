@@ -1,0 +1,41 @@
+.wrap{
+    display:flex;
+}
+
+.square{
+    width: 200px;
+    height: 200px;
+    transition: all 1s ease;
+}
+
+.square.one-square{
+    background: green;
+}
+
+.square.two-square{
+    background: rgb(255, 166, 0);
+}
+
+.square.two-square{
+    background: rgb(74, 221, 165);
+}
+
+.square.two-square{
+    background: rgb(97, 41, 143);
+}
+
+@media only screen and(min-width:1024px){
+
+}
+
+@media only screen and(min-width:768px){
+    .wrap{
+        margin:auto;
+    }
+}
+
+@media only screen and(min-width:520px)and (max-width:768px){
+    .wrap{
+            
+    }
+}

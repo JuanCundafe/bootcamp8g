@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    padding: 30px 15px;
+    background: url("../images/bg-hero-mobile.svg");
+    background-color: hsl(193, 100%, 96%);
+    margin-bottom: 90px;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-section img {
+    height: 18px;
+    width: 100px;
+    margin-top: 5px;
+}
+
+.logo-section button {
+    height: 25px;
+    width: 100px;
+    border-radius: 25px;
+    background-color: white;
+    border: none;
+    box-shadow: 0px 3px 8px #aaaaaa38;
+    font-weight: bolder;
+    font-size: 10px;
+}
+
+.all-content {
+    margin-top: 80px;
+}
+
+.main-informaion {
+    padding: 0 35px;
+    text-align: center;
+    /*margin-bottom: 30px;*/
+}
+
+.paragraph {
+    margin: 35px 0;
+    font-size: 1.05rem;
+}
+
+.main-informaion button {
+    height: 40px;
+    width: 220px;
+    border-radius: 20px;
+    border: none;
+    background-color: hsla(322, 100%, 66%, 0.979);
+    color: white;
+    box-shadow: 3px 3px 5px hsla(322, 100%, 66%, 0.15);
+}
+
+.h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.mockups {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.mockups img {
+    width: 80%;
+}
+
+.card {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #DADADA;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-wrapper1 {
+    margin: auto;
+    flex-grow: 1;
+    flex-direction: column;
+    margin-right: 15px;
+    margin-left: 15px;
+    align-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.text-wrapper2 {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    /*margin: auto;*/
+    /*flex-grow: 1;*/
+    margin-right: 15px;
+    margin-left: 15px;
+    /*align-content: center;*/
+}
+
+.text-wrapper3 {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    /*margin: auto;*/
+    /*flex-grow: 1;*/
+    margin-right: 15px;
+    margin-left: 15px;
+    /*align-content: center;*/
+}
+
+.text-wrapper1 h3, .text-wrapper2 h3, .text-wrapper3 h3 {
+    margin: 20px 0;
+}
+
+.image-wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+.foot {
+    text-align: center;
+    width: 355px;
+    height: 170px;
+    margin: auto;
+    padding-top: 40px;
+    border-radius: 16px;
+    box-shadow: 0 0 5px #DADADA;
+    background-color: hsl(208, 100%, 100%);
+    position: relative;
+    top: 53px;
+}
+
+.foot h2 {
+    font-size: 18px;
+}
+
+.second-b {
+    border: none;
+    background-color: hsla(322, 100%, 66%, 0.979);
+    width: 225px;
+    height: 50px;
+    border-radius: 112.5px;
+    margin: 25px;
+    color: white;
+    box-shadow: 0 3px 12px #DADADA;
+    font-size: 11px;
+}
+
+.backg {
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+    padding: 100px 20px;
+}
+
+.icons {
+    display: flex;
+    margin: 40px 0 20px 0;
+    justify-content: center;
+}
+
+.directory {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+.directory img {
+    height: 19px;
+    width: auto;
+    margin-right: 20px;
+    margin-top: 6px;
+}
+
+.directory2 {
+    display: flex;
+    padding-top: 20px;
+}
+
+.directory2 img {
+    height: 19px;
+    width: auto;
+    margin-right: 14px;
+    margin-top: 6px;
+}
+
+.directory3 {
+    display: flex;
+    padding-top: 20px;
+}
+
+.directory3 img {
+    height: 19px;
+    width: auto;
+    margin-right: 14px;
+    margin-top: 6px;
+}
+
+.lists {
+    margin-top: 40px;
+}
+
+.lists2 {
+    margin-top: 5px;
+}
+
+.lists li {
+    margin: 10px 0;
+    list-style: none;
+}
+
+.lists2 li {
+    margin: 10px 0;
+    list-style: none;
+}
+
+.icons i {
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 10px;
+    margin: 0 8px;
+}
+
+.copy {
+    text-align: center;
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 1024px) {
+    header {
+        padding: 45px 60px;
+        background: url("../images/bg-hero-desktop.svg") no-repeat center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: hsl(193, 100%, 96%);
+    }
+
+    .logo-section img {
+        height: auto;
+        width: 160px;
+    }
+
+    .logo-section button {
+        height: auto;
+        width: 160px;
+    }
+
+    .all-content {
+        display: flex;
+        margin-top: 70px;
+    }
+
+    .main-informaion {
+        margin: auto 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        text-align: left;
+        width: 58%;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .mockups {
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+        justify-content: flex-end;
+    }
+
+    .foot {
+        border: radius 5px;
+        width: 600px;
+    }
+
+    .card {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 5px #DADADA;
+        padding: 25px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .card.reverse {
+        flex-direction: inherit;
+    }
+
+    .text-wrapper1, .text-wrapper3 {
+        display: flex;
+        text-align: left;
+        /*margin-left: 50px;*/
+        margin: auto 0 auto 50px;
+    }
+
+    .text-wrapper2 {
+        display: flex;
+        text-align: left;
+        margin-left: 50px;
+        flex-direction: column;
+        margin: auto 0;
+    }
+
+    .image-wrapper {
+        width: 40%;
+        margin-right: 30px;
+    }
+
+    .backg {
+        padding: 120px 70px;
+        display: flex;
+    }
+
+    .content-footer1 {
+        width: 34%;
+    }
+
+    .content-footer2 {
+        width: 33%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .lists, .lists2 {
+        margin: 0;
+    }
+
+    .content-footer3 {
+        width: 33%;
+    }
+
+    .icons {
+        margin: 40px 0 120px 0;
+    }
+}

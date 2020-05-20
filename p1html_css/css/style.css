@@ -1,0 +1,41 @@
+body{
+    width:1080px;
+    margin: auto;
+    padding:0;
+}
+
+header{
+    height:140px;
+    margin-bottom:15px;
+    background-color:#91e4fd;
+    border: 2px solid magenta;
+}
+nav{
+    background-color: rgb(rgb(173, 42, 156), green, blue);
+    margin-bottom: 15px;
+}
+
+section{
+    width:710px;
+    height:450px;
+    background-color:#9391fa;
+    border: 2px solid magenta;
+}
+
+aside{
+    width:275px;
+    height:450px;
+    background-color:#5089ca;
+    position: 750px;
+    border: 2px solid magenta;
+
+}
+
+footer{
+    height:70px;
+    margin-top:15px;
+    background-color:#b8bbec;
+    position: absolute bottom;
+    border: 2px solid rgb(0, 4, 255);
+    
+}

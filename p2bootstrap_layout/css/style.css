@@ -1,0 +1,32 @@
+.header {
+  background-color: cyan;
+}
+
+.nav {
+  background-color: salmon;
+}
+
+.section {
+  background-color: palevioletred;
+}
+
+.article {
+  background-color: sandybrown;
+}
+
+.aside {
+  background-color: red;
+}
+
+.footer {
+  background-color: royalblue;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+.card {
+  margin-bottom: 2rem;
+}
+/*# sourceMappingURL=style.css.map */

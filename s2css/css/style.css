@@ -1,0 +1,47 @@
+*{
+    color: #322C72;
+}
+
+p{
+    text-transform: uppercase;
+}
+
+#page-heading{
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.btn-success{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    border: 1px dotted green;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #322C72
+    color: white;
+}
+
+ul{
+    border: 1px solid black;
+    border-radius: 2px;
+    box-shadow: 3px 3px 5px #686868;
+}
+
+#primero{
+    text-transform: uppercase;
+    color:pink;
+}
+
+li{
+
+    font-weight: bold;
+    list-style: none;
+    border: 1px solid red;
+    border-radius: 2px;
+    padding: 5px;
+    margin: 15px;
+}
+
+#first-j:hover{
+    color:green;
+}
