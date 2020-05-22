@@ -1,0 +1,36 @@
+*{
+    font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif!important;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased
+}
+
+.hoover-h:hover{
+    cursor: pointer;
+    }
+
+h5{
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+#text-editors{
+    color:#03a87c
+}
+
+.overflow-horizontal{
+    overflow-x: hidden;
+    width: 90%;
+}
+.icon{
+    width: 35px;
+    height: 35px;
+}
+.small-logo{
+    width: 25%;
+}
+.main-logo{
+    width: 40%;
+}
