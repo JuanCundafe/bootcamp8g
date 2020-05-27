@@ -24,13 +24,24 @@ h5{
     overflow-x: hidden;
     width: 90%;
 }
+.overflow-horizontal{
+    overflow-x: hidden;
+    width: 90%;
+}
+
 .icon{
     width: 35px;
     height: 35px;
 }
+
 .small-logo{
     width: 25%;
 }
+
 .main-logo{
     width: 40%;
+}
+
+.small, small{
+ font-size: 75%;
 }
