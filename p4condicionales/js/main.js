@@ -9,7 +9,7 @@ if(randomNumber%2 == 0){
 var length = 12;
 var width = 11;
 
-if(length%width == 0){
+if(length == width){
     console.log("Es un cuadrado")
 }else{
     console.log("Es un rectángulo")
