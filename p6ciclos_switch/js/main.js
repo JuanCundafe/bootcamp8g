@@ -73,3 +73,4 @@ const evenNumber = ( number ) => {
     alert("Elige otro número dentro del rango indicado")
   }
 }
+
