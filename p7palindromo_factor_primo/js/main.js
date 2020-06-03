@@ -28,6 +28,7 @@ const checkPalindrome = (string) => {
      return false;
    }
   }
+
 const justOneWord = (string) => {
   let arrayWord = string.split(" ")
   if(arrayWord.length > 1){
@@ -37,9 +38,8 @@ const justOneWord = (string) => {
   }
 }
 
-
 const checkNumbers = (string) => {
-  var checkNumber = [];
+var checkNumber = [];
  checkNumber = string.match(/[1234567890]/g)
  if(checkNumber == null){
    return true;
@@ -48,50 +48,79 @@ const checkNumbers = (string) => {
  }
 }
 
-/*
-
 const getNumber = () => {
   let number = prompt("Escribe una número para identificar sus factores primos");
   if(justOneNumber(number) == false){
     alert("Ingresa un solo número")
   }else {
-    let primeFactors = getPrimeFactor(number);
-    primeFactors ? 
-        alert(`Los factores primos son` ${string}) :
-        alert("La palabra ingresada no es un palíndromo")
+    if(checkWords(number) == false){
+      alert("Debes ingresar solamente números")
+    }else{
+    primeNumbers(number)
+    let primeFactorString = primeFactor(number).join();
+    let arrayCheck = primeFactorString.match(/[","]/)
+    if(arrayCheck == null){
+      alert(`El número ${number} es un número primo`)
+    }else{
+      alert(`Los factores primos de tu número son ${primeFactorString}`)
+    }
+    
+      }
  }
 }
 
+const checkWords = (string) => {
+  var checkNumber = [];
+   checkNumber = string.match(/\D/g)
+   if(checkNumber == null){
+     return true;
+   }else{
+     return false;
+   }
+  }
+
+
 const justOneNumber = (string) => {
-  let arrayWord = string.split(" ", ",")
-  if(arrayWord.length > 1){
-    return false;
-  }else {
+  let arrayWord = string.match(/[" " ","]/)
+
+  if(arrayWord == null){
     return true;
+  }else {
+    return false;
   }
 }
 
-const getPrimeFactor = (string) => {
-  let makeNumber = parse.int(string)
-  let string = " ";
-  while(x != 1){
-    if(x%2 == 0){
-      x = x/2
-      string = string.concat(2)
-    }else{
-      if(x%3 == 0){
-      x = x/2
-      string = string.concat(3)
-    }
-  }else{
-     if(x%5 == 0){
-      x = x/2
-      string = string.concat(5)
-  }else{
-     if(x%7 == 0){
-      x = x/2
-      string = string.concat(7)
+const isPrime = (n) => {
+  for(let i = 2; i < n; i++){
+      if(n % i === 0){
+         return false;
+      }
   }
-  return string
+  return true;
 }
-*/
+var primes = []
+var noPrimes = []
+const primeNumbers = (max) => {
+  for (let i = 2; i < max; i++) {
+      if (isPrime(i)) {
+          primes.push(i)
+      }
+      else{
+          noPrimes.push(i)
+      }
+  }
+}
+
+const primeFactor = (string) =>{
+  let number = parseInt(string);
+  let arrayResult = [ ]
+  primes.forEach(element => {
+    while(number % element == 0){
+      number = number/element
+      arrayResult.push(element)
+    }
+     });
+     return arrayResult;
+}
+
+
