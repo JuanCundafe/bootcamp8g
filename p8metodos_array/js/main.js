@@ -16,30 +16,19 @@ var stringPhrase = "La mejor forma de predecir el futuro es creándolo"
 var arrayPhrase = stringPhrase.split(" ")
 console.log(arrayPhrase)
 var newArrayPhrase = []
-var counter = 1;
 
-arrayPhrase.forEach((word) => {
-  if(counter%2==0){
-    var minus = word.toLowerCase()
-    newArrayPhrase.push(minus)
-    counter += 1
-  }else{
-    var mayus = word.toUpperCase()
-    newArrayPhrase.push(mayus)
-    counter += 1
-  }
-  
-})
-console.log(newArrayPhrase.join(" "))
+var procesedArray = arrayPhrase
+                        .map( (word, index)  => index % 2 === 0 ? word.toUpperCase() : word.toLowerCase() )
+                        .join(" ")
+console.log(procesedArray)
 
-var arrayFilter = arrayPhrase.filter((item)=> {
-  return item.length >= 5
-})
+var arrayFilter = arrayPhrase.filter(item => item.length >= 5).join(" ")
 
-console.log(arrayFilter.join(" "))
+console.log(arrayFilter)
 
 var arrayAverage = arrayPhrase.reduce ((acum, value) => {
   return acum + value.length
 }, 0)
+
 var average = arrayAverage/arrayPhrase.length
 console.log(`La frase usa en promedio ${average} caracteres por palabra`)
