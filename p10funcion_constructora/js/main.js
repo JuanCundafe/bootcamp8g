@@ -50,8 +50,11 @@ function Mentor(name, age, skills){
 this.name = name;
 this.age = age;
 this.skills = skills;
-
-this.average = (skills[0].javascript + skills[0].css + skills[0].jquery + skills[0].node)/4
+this.showAverage = function (){
+    var {javascript, css, jquery, node} = this.skills[0];
+    let average = (javascript + css + jquery + node) / 4;
+    return average;
+}
 
 }
 
@@ -61,6 +64,7 @@ const mentorObjects = mentors.map((item) => {
 });
 
 console.log(mentorObjects)
+
 
 
 /*
