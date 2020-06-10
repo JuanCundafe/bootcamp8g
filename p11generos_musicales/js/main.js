@@ -46,23 +46,13 @@ var songsArray = [
     }
 ]
 
-var rock = []
-var metal = []
-var grounge = []
-var progressiveRock = []
-var trash = []
-var list= [["Rock", rock], ["Metal",metal], ["Grounge", grounge], ["Progressive Rock", progressiveRock], ["Trash", trash]]
-var musicalGenre = songsArray.reduce((accum, item, index) => {
-    item.genre === "Rock" ? rock.push(item) : 0
-    item.genre === "Metal" ? metal.push(item) : 0
-    item.genre === "Grounge" ? grounge.push(item) : 0
-    item.genre === "Progressive Rock" ? progressiveRock.push(item) : 0
-    item.genre === "Trash" ? trash.push(item) : 0
-    return [rock, metal, grounge, progressiveRock, trash]
-     
-}, 0);
-console.log(list)
-console.log(musicalGenre)
+var newArray = songsArray.reduce( ( accum, song ) => {
+        let songGender = song.genre;
+        !accum[songGender] ? ( accum[songGender] = [], accum[songGender].push(song) ) : accum[songGender].push(song);
+        return accum
+    },[])
+
+console.log(newArray)
 
     /*
     this.organizeGenre = function (){
