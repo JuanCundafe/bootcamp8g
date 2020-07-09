@@ -38,25 +38,18 @@ function paint (wallToPaint){
     })
 }
 
-build({})  
-    .catch((error) => {
-        console.error('build error:', error)
-    })
-    .then((builtWall) => {
-        console.log('builtWall:', builtWall)
-        planish({})
-        .then((planishedWall) => {
-            console.log('planishedWall:', planishedWall)
-            paint({})
-            .then((paintedWall) => {
-                console.log('paintedWall:', paintedWall)
-            })
-            .catch((paintError) => {
-                console.error('paint error:', paintError)
-            })
-        })
-        .catch((planishError) => {
-            console.error('planish error:', planishError)
-        })
-    })
+async function main (){
+    const builtWall = await build({})
+    const planishedWall = await planish(builtWall)
+    const paintedWall = await paint(planishedWall)
+    console.log('paintedWall: ', paintedWall)
+    return 'bla bla'
+}
 
+main()
+.then((resultado)=>{
+    console.log('Done!: ', resultado)
+})
+.catch(error => {
+    console.error('Error: ', error)
+})
