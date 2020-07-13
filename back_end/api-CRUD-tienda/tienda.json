@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "product": "Rufles_Con_Queso",
+      "size": "400gr.",
+      "expiration_date": "10/05/2022"
+    },
+    {
+      "product": "Sabritas_Adobadas",
+      "size": "320gr.",
+      "expiration_date": "10/10/2021"
+    },
+    {
+      "product": "Coca_Cola_Light",
+      "size": "355ml.",
+      "expiration_date": "16/01/2021"
+    },
+    {
+      "product": "Pan_Bimbo_Blanco",
+      "size": "740gr.",
+      "expiration_date": "10/10/2020"
+    }
+  ]
+}

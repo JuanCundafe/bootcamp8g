@@ -1,0 +1,34 @@
+{
+  "koders": [
+    {
+      "name": "Juan",
+      "gender": "male"
+    },
+    {
+      "name": "Mau",
+      "gender": "x"
+    },
+    {
+      "name": "Nitz",
+      "gender": "female"
+    },
+    {
+      "name": "Pepe",
+      "gender": "male"
+    }
+  ],
+  "mentors": [
+    {
+      "name": "Juan",
+      "gender": "male"
+    },
+    {
+      "name": "Mau",
+      "gender": "x"
+    },
+    {
+      "name": "Nitz",
+      "gender": "female"
+    }
+  ]
+}
